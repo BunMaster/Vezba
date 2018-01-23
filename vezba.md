@@ -10,3 +10,31 @@
 10. TCP/IP - 
 11. kes memorija - je privremena memorija koja je sacuvana u nasem sistemu nakon sto smo zavrsili rad na pretrazivacu
 12. klase i objekt - objekat je jedan clan iz klase koji ima svoje osobine i ponasanje, a klasa je templejt koji opisuje ponasanje i osobine objekata ciji tip podrzava.
+
+
+for (var i=1; i <= 100; i++)
+{
+    if (i % 15 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+
+
+
+
+def fizzbuzz(n):
+	if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
+
+print "\n".join(fizzbuzz(n) for n in xrange(1, 101))
